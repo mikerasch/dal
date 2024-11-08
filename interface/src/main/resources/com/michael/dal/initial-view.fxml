@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#detectKeyPressOnHomeScreen" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.michael.dal.controllers.home.InitialViewController">
+   <children>
+      <TabPane fx:id="tabPane" layoutY="4.0" prefHeight="894.0" prefWidth="1600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+  <jdbc>
+    <driver>org.sqlite.JDBC</driver>
+    <url>jdbc:sqlite:database.db</url>
+  </jdbc>
+
+  <generator>
+    <name>org.jooq.codegen.JavaGenerator</name>
+
+    <database>
+      <name>org.jooq.meta.sqlite.SQLiteDatabase</name>
+      <includes>.*</includes>
+    </database>
+
+    <target>
+      <packageName>com.michael.dal.database.generated</packageName>
+      <directory>src/main/java</directory>
+    </target>
+  </generator>
+</configuration>
