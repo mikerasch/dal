@@ -3,24 +3,21 @@
  */
 package com.michael.dal.database.generated;
 
-
 import com.michael.dal.database.generated.tables.CurlActivity;
 import com.michael.dal.database.generated.tables.FlywaySchemaHistory;
+import com.michael.dal.database.generated.tables.RoutineChecks;
 
-
-/**
- * Convenience access to all tables in the default schema.
- */
-@SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
+/** Convenience access to all tables in the default schema. */
+@SuppressWarnings({"all", "unchecked", "rawtypes", "this-escape"})
 public class Tables {
 
-    /**
-     * The table <code>CURL_ACTIVITY</code>.
-     */
-    public static final CurlActivity CURL_ACTIVITY = CurlActivity.CURL_ACTIVITY;
+  /** The table <code>CURL_ACTIVITY</code>. */
+  public static final CurlActivity CURL_ACTIVITY = CurlActivity.CURL_ACTIVITY;
 
-    /**
-     * The table <code>flyway_schema_history</code>.
-     */
-    public static final FlywaySchemaHistory FLYWAY_SCHEMA_HISTORY = FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY;
+  /** The table <code>flyway_schema_history</code>. */
+  public static final FlywaySchemaHistory FLYWAY_SCHEMA_HISTORY =
+      FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY;
+
+  /** The table <code>ROUTINE_CHECKS</code>. */
+  public static final RoutineChecks ROUTINE_CHECKS = RoutineChecks.ROUTINE_CHECKS;
 }

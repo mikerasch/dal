@@ -139,7 +139,7 @@ public class HomeTabController {
         return;
       }
     }
-    BrowserWidget browserWidget = new BrowserWidget(1600.0, 900.0);
+    var browserWidget = new BrowserWidget(1600.0, 900.0, 1.15);
     String url = homeService.getSwaggerUrl(title, environment);
     browserWidget.loadURL(url);
     tabPane.getTabs().add(new Tab(titleWithEnvironment, browserWidget));

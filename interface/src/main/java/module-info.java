@@ -43,5 +43,7 @@ module com.michael.dal {
   exports com.michael.dal.services.terminal;
   exports com.michael.dal.manager;
   exports com.michael.dal.controllers.home.tabs;
-  opens com.michael.dal.controllers.home.tabs to javafx.fxml;
+
+  opens com.michael.dal.controllers.home.tabs to
+      javafx.fxml;
 }

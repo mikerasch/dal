@@ -11,6 +11,7 @@ import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.apache.commons.lang3.StringUtils;
 
@@ -22,6 +23,9 @@ public class HistoryTabController {
   @FXML private TableColumn<String, String> commandColumn;
   @FXML private TableColumn<String, String> serviceColumn;
   @FXML private TableColumn<String, String> envColumn;
+  @FXML private TextField commandSearchTextBar;
+  @FXML private TextField serviceSearchTextBar;
+  @FXML private TextField envSearchTextBar;
 
   private final HomeService homeService;
   private TabPane tabPane;
@@ -50,6 +54,15 @@ public class HistoryTabController {
     switchToHomeTab();
   }
 
+  @FXML
+  public void envTextChanged() {}
+
+  @FXML
+  public void serviceTextChanged() {}
+
+  @FXML
+  public void commandTextChanged() {}
+
   private void initializeHistoryObserver() {
     homeService
         .getEventBus()
@@ -64,7 +77,6 @@ public class HistoryTabController {
             });
   }
 
-  @FXML
   private void initializeHistory() {
     List<CurlActivity> curlActivities = homeService.fetchAllCurlActivities();
     ObservableList<CurlActivity> observableList = FXCollections.observableArrayList();

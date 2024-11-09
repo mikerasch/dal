@@ -9,12 +9,13 @@ public class BrowserWidget extends Region {
   private final Double browserWidth;
   private final Double browserHeight;
 
-  public BrowserWidget(final Double browserWidth, final Double browserHeight) {
+  public BrowserWidget(final Double browserWidth, final Double browserHeight, final double zoom) {
     this.browserWidth = browserWidth;
     this.browserHeight = browserHeight;
     WebView webView = new WebView();
     webView.setMinHeight(browserHeight);
     webView.setMinWidth(browserWidth);
+    webView.setZoom(zoom);
     webEngine = webView.getEngine();
     getChildren().add(webView);
   }
